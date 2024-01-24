@@ -36,6 +36,10 @@ Get-ExpiringCertificate
 Get-IssuedCertificate -TemplateName 'Test Template' | Revoke-Certificate
 ```
 
+> This is a project to offer fine-tuned delegation of certificate management.
+> If you do not care about least privileges and just want the admin tools, [check out this project here](https://github.com/FriedrichWeinmann/PkiExtension).
+> All we really do here, is wrap around the PkiExtension module's tools.
+
 ## Installation
 
 Setup for this project is a bit more involved:
@@ -107,3 +111,11 @@ _Adding a principal to the Admin role:_
 ```powershell
 Add-RoleMember -Role Admin -ADMember S-1-5-21-3710217024-1956168353-80067308-500 -System certificatemanager
 ```
+
+## Dependencies
+
+This project uses a few other dependencies to make the magic happen:
+
++ [PSFramework](https://psframework.org) - for logging and tooling
++ [PkiExtension](https://github.com/FriedrichWeinmann/PkiExtension) - Actual implementation of certificate operations. If you are looking for the tools without the delegation, look here.
++ [Roles](https://www.powershellgallery.com/packages/Roles) - Toolkit to implement your own RBAC on resource level for JEA Endpoints.

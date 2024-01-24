@@ -20,11 +20,12 @@
 		
 		Removes the AD group "JEA-CM-TestServerCert-Revoke" from the role allowed to revoke certificates of the template "Test Server Cert"
 	#>
+	[Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseShouldProcessForStateChangingFunctions", "")]
 	[CmdletBinding()]
 	param (
 		[Parameter(Mandatory = $true)]
 		[PsfArgumentCompleter('PkiExtension.TemplateName')]
-		[string]	
+		[string]
 		$TemplateName,
 
 		[Parameter(Mandatory = $true)]

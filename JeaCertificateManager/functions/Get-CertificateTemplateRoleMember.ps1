@@ -26,7 +26,7 @@
 	[CmdletBinding()]
 	param (
 		[PsfArgumentCompleter('PkiExtension.TemplateName')]
-		[string]	
+		[string]
 		$TemplateName,
 
 		[ValidateSet('Read', 'Revoke')]

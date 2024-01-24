@@ -26,11 +26,12 @@
 	
 		Grants read access to the WebServer template to the AD Group 'JEA-CM-Role-WebServer-Read'
 	#>
+	[Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseShouldProcessForStateChangingFunctions", "")]
 	[CmdletBinding()]
 	param (
 		[Parameter(Mandatory = $true)]
 		[PsfArgumentCompleter('PkiExtension.TemplateName')]
-		[string]	
+		[string]
 		$TemplateName,
 
 		[Parameter(Mandatory = $true)]

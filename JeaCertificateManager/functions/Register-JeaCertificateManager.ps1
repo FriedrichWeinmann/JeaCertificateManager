@@ -26,6 +26,7 @@
 	
 		Register this module in WinRM as a remoting target.
 #>
+	[Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSAvoidUsingEmptyCatchBlock", "")]
 	[CmdletBinding()]
 	param (
 		[Parameter(Mandatory = $true)]

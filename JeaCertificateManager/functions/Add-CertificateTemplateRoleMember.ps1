@@ -24,7 +24,7 @@
 	param (
 		[Parameter(Mandatory = $true)]
 		[PsfArgumentCompleter('PkiExtension.TemplateName')]
-		[string]	
+		[string]
 		$TemplateName,
 
 		[Parameter(Mandatory = $true)]

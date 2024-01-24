@@ -6,7 +6,7 @@ This project aims to provide tools to better delegate parts of the certificate l
 It is an implementation of the Just Enough Administration technology to delegate access to a workflow, rather than privileges over a system.
 Fundamentally, it allows you to grant ...
 
-> ... permission to read or revoke certificates for a specific template
+> ... permission to read or revoke certificates for a specific template.
 
 Without granting any further privileges.
 
